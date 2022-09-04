@@ -198,6 +198,11 @@
   display: flex;
   align-items: center;
 }
+.logoCon > a{
+  text-decoration: none;
+  display: flex;
+  color: #222;
+}
 .logoCon > a > img{
   width: 40px;
   height: 40px;
