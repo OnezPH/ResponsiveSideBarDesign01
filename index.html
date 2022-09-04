@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Side Bar ~ Design 01</title>
+
+
+  <link rel="icon" href="asset/2.0Logo.png">
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+</head>
+<body>
+  <div id="con" class="container">
+    <div id="headerCon" class="header-con">
+      <div class="headerWrap">
+        <div class="headerSeacrhField">
+          <input id="search" type="search" placeholder="Search Anything">
+          <i class='bx bx-search'></i>
+        </div>
+        <div class="notificationMessageProfileCon">
+          <a id="headerMessage" href="#"><i class='bx bx-message-dots'></i></a>
+          <a id="headerNotification" href="#"><i class='bx bx-bell' ></i></a>
+          <div class="profile-con-nav-pro">
+            <input type="checkbox" id="imgCheck">
+            <label for="imgCheck">
+              <img src="asset/profile.jpg" alt="Profile">
+            </label>
+            <div id="profileNavMenuCon" class="pro-nav-menu-con">
+              <div class="proNavWrap">
+                <h5>Profile Setting</h5>
+                <a id="viewProfile" href="#">View Profile</a>
+                <hr>
+                <li id="hoverProgfileMenu01" ><a href="#"><i class='bx bx-user-circle'></i> Explore creators</a></li>
+                <li id="hoverProgfileMenu02"><a href="#"><i class='bx bx-heart' ></i>Manage membership</a></li>
+                <li id="hoverProgfileMenu03"><a href="#"><i class='bx bx-send' ></i>Inviter creators</a></li>
+                <hr>
+                <a id="logOut" href="#">Log out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sideBarCon" class="side-bar-con">
+      <div class="sideBarWrap">
+        <div class="logoCon">
+          <a href="index.html">
+            <img src="asset/logo1.jpg" alt="Logo">
+            <h2 id="logoText" >OnezPH</h2>
+          </a>
+        </div>
+        <nav>
+          <li class="li-con">
+            <a href="#" class="active" id="active">
+              <i class='bx bxs-home' ></i><span class="hoverdash">Dashboard</span>
+            </a>
+          </li>
+          <li class="li-con">
+            <a href="#" id="sideBarEnterMouse01" class="over">
+              <i class='bx bx-bar-chart-alt-2'></i><span class="hoverover">Overview</span>
+            </a>
+          </li>
+          <li class="li-con">
+            <a href="#" id="sideBarEnterMouse02" class="post">
+              <i class='bx bx-book-content'></i><span class="hoverpost">Posts</span>
+            </a>
+          </li>
+          <li class="li-con">
+            <a href="#" id="sideBarEnterMouse03" class="sched">
+              <i class='bx bx-calendar-check'></i><span class="hoversched">Schedules</span>
+            </a>
+          </li>
+          <li class="li-con">
+            <input type="checkbox" id="drop">
+            <label for="drop">
+              <div class="drop-con" id="sideBarEnterMouse04">
+                <div class="drop-income-text income">
+                  <i class='bx bx-wallet-alt' ></i><span class="hoverincome">Income</span>
+                </div>
+                <i id="s" class='bx bx-chevron-up' ></i>
+                <i id="d" class='bx bx-chevron-down'></i>
+              </div>
+            </label>
+            <ul id="dronUlCon">
+              <li>
+                <a href="#" id="dropMenu01">Earnings</a>
+              </li>
+              <li>
+                <a href="#" id="dropMenu02">Refunds</a>
+              </li>
+              <li>
+                <a href="#" id="dropMenu03">Declines</a>
+              </li>
+              <li>
+                <a href="#" id="dropMenu04">Payouts</a>
+              </li>
+            </ul>
+          </li>
+          <li class="li-con">
+            <a href="#" id="sideBarEnterMouse05" class="promote">
+              <i class='bx bx-doughnut-chart'></i><span class="hoverpromote">Promote</span>
+            </a>
+          </li>
+          <li class="li-con">
+            <a href="#" id="sideBarEnterMouse06" class="documents">
+              <i class='bx bx-file' ></i><span class="hoverdocumnets">Documents</span>
+            </a>
+          </li>
+          <li class="li-con">
+            <a href="#" id="sideBarEnterMouse07" class="reports">
+              <i class='bx bxs-report' ></i><span class="hoverreports">Reports</span>
+            </a>
+          </li>
+        </nav>
+        <div class="themeCon">
+          <div id="themeWrap" class="themeModeWrap">
+            <button id="lightMode" type="button" onclick="light()">
+              <i class='bx bx-sun' ></i>Light Mode
+            </button>
+            <button id="darkMode" type="button" onclick="dark()">
+              <i class='bx bx-moon' ></i>Dark Mode
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mainContentCon" class="main-content-con"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
