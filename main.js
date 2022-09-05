@@ -215,34 +215,42 @@ function light() {
   darkTheme.style.left = '0'
 
   navTooltip01.style.backgroundColor = '#fff'
+  navTooltip01.style.color = '#222'
   navTooltip01.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
   navTooltip01.style.setProperty('--beforeBack', '#fff')
 
   navTooltip02.style.backgroundColor = '#fff'
+  navTooltip02.style.color = '#222'
   navTooltip02.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
   navTooltip02.style.setProperty('--beforeBack', '#fff')
 
   navTooltip03.style.backgroundColor = '#fff'
+  navTooltip03.style.color = '#222'
   navTooltip03.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
   navTooltip03.style.setProperty('--beforeBack', '#fff')
 
   navTooltip04.style.backgroundColor = '#fff'
+  navTooltip04.style.color = '#222'
   navTooltip04.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
   navTooltip04.style.setProperty('--beforeBack', '#fff')
 
   navTooltip05.style.backgroundColor = '#fff'
+  navTooltip05.style.color = '#222'
   navTooltip05.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
   navTooltip05.style.setProperty('--beforeBack', '#fff')
 
   navTooltip06.style.backgroundColor = '#fff'
+  navTooltip06.style.color = '#222'
   navTooltip06.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
   navTooltip06.style.setProperty('--beforeBack', '#fff')
 
   navTooltip07.style.backgroundColor = '#fff'
+  navTooltip07.style.color = '#222'
   navTooltip07.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
   navTooltip07.style.setProperty('--beforeBack', '#fff')
 
   navTooltip08.style.backgroundColor = '#fff'
+  navTooltip08.style.color = '#222'
   navTooltip08.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
   navTooltip08.style.setProperty('--beforeBack', '#fff')
 
