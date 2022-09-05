@@ -88,7 +88,7 @@
   width: 230px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 3px 10px 3px rgba(209, 209, 209, 0.7);
+  box-shadow: 0 1px 10px 1px rgba(209, 209, 209, 0.7);
 
   position: absolute;
   top: 55px;
@@ -346,8 +346,47 @@ nav > li .active{
 #lightMode{
   background-color: #fff;
 }
+#tooltipHoverEffectDash,
+#tooltipHoverEffectOver,
+#tooltipHoverEffectPost,
+#tooltipHoverEffectSched,
+#tooltipHoverEffectIncome,
+#tooltipHoverEffectPromote,
+#tooltipHoverEffectDoc,
+#tooltipHoverEffectRep{
+  position: absolute;
+  top: 3px;
+  left: 60px;
+  z-index: 999;
 
+  background-color: #fff;
+  border-radius: 6px;
 
+  box-shadow: 0 1px 10px 2px rgba(209, 209, 209, 0.7);
+  padding: 5px 10px;
+
+  transition: .3s linear;
+  display: none;
+}
+#tooltipHoverEffectDash::before,
+#tooltipHoverEffectOver::before,
+#tooltipHoverEffectPost::before,
+#tooltipHoverEffectSched::before,
+#tooltipHoverEffectIncome::before,
+#tooltipHoverEffectPromote::before,
+#tooltipHoverEffectDoc::before,
+#tooltipHoverEffectRep::before{
+  content: '';
+  width: 14px;
+  height: 14px;
+
+  margin-top: 5px;
+  margin-left: -17px;
+  transform: rotate(45deg);
+  background-color: var(--beforeBack, #fff);
+  position: absolute;
+  z-index: 999;
+}
 
 
 
@@ -383,56 +422,32 @@ nav > li .active{
   .sideBarWrap{
     overflow: visible;
   }
-  .li-con > a > span,
-  .drop-income-text span{
-    position: absolute;
-    left: 60px;
-    z-index: 999;
-
-    background-color: #fff;
-    border-radius: 6px;
-
-    box-shadow: 0 3px 10px 3px rgba(209, 209, 209, 0.7);
-    padding: 5px 10px;
-
-    display: none;
-    transition: .3s ease-in-out;
-  }
-  .li-con > a > span::before,
-  .drop-income-text span::before{
-    content: '';
-    width: 14px;
-    height: 14px;
-
-    margin-top: 5px;
-    margin-left: -17px;
-    transform: rotate(45deg);
-    background-color: var(--beforeBack, #fff);
-    position: absolute;
-  }
-  .reports i:hover ~ .hoverreports,
-  .documents i:hover ~ .hoverdocumnets,
-  .promote i:hover ~ .hoverpromote,
-  .income i:hover ~ .hoverincome,
-  .sched i:hover ~ .hoversched,
-  .post i:hover ~ .hoverpost,
-  .over i:hover ~ .hoverover,
-  .active i:hover ~ .hoverdash{
+  .li-con > .active:hover ~ #tooltipHoverEffectDash,
+  .li-con > #sideBarEnterMouse01:hover ~ #tooltipHoverEffectOver,
+  .li-con > #sideBarEnterMouse02:hover ~ #tooltipHoverEffectPost,
+  .li-con > #sideBarEnterMouse03:hover ~ #tooltipHoverEffectSched,
+  .li-con > #sideBarEnterMouse05:hover ~ #tooltipHoverEffectPromote,
+  .li-con > #sideBarEnterMouse06:hover ~ #tooltipHoverEffectDoc,
+  .li-con > #sideBarEnterMouse07:hover ~ #tooltipHoverEffectRep,
+  .li-con > label > #sideBarEnterMouse04 > .drop-income-text:hover ~ #tooltipHoverEffectIncome{
     display: block;
   }
+  .li-con > a > span,
+  .drop-income-text span{display: none;}
   .li-con > ul > li > a{
     margin: 0;
     padding: 6px 10px;
   }
   #dronUlCon{
-    margin: -10px 0 0 50px;
+    margin: -45px 0 0 65px;
     position: absolute;
+    z-index: 1;
     background-color: #fff;
     border-radius: 6px;
     border: none;
     padding: 10px;
-    box-shadow: 0 3px 10px 3px rgba(209, 209, 209, 0.7);
-    transition: .3s ease-in-out;
+    box-shadow: 0 1px 10px 1px rgba(209, 209, 209, 0.7);
+    transition: .3s linear;
   }
   #dronUlCon::before{
     content: '';
@@ -441,9 +456,9 @@ nav > li .active{
     background-color: var(--beforeBack, #fff);
     border-radius: 2px;
     transform: rotate(45deg);
-    margin: -18px 0 0 10px;
+    margin: 5px 0 0 -18px;
     position: absolute;
-    transition: .3s ease-in-out;
+    transition: .3s linear;
   }
   .theme{display: none;}
   .themeModeWrap{
@@ -458,6 +473,7 @@ nav > li .active{
     overflow: hidden;
     position: relative;
   }
+  .themeModeWrap > button > span{display: none;}
   .themeModeWrap > button{
     position: absolute;
   }

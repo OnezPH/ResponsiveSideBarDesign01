@@ -38,14 +38,14 @@ let hoverPnavMenu02 = document.getElementById('hoverProgfileMenu02')
 let hoverPnavMenu03 = document.getElementById('hoverProgfileMenu03')
 
 
-let navTooltip01 = document.getElementById('tooltip01')
-let navTooltip02 = document.getElementById('tooltip02')
-let navTooltip03 = document.getElementById('tooltip03')
-let navTooltip04 = document.getElementById('tooltip04')
-let navTooltip05 = document.getElementById('tooltip05')
-let navTooltip06 = document.getElementById('tooltip06')
-let navTooltip07 = document.getElementById('tooltip07')
-let navTooltip08 = document.getElementById('tooltip08')
+let navTooltip01 = document.getElementById('tooltipHoverEffectDash')
+let navTooltip02 = document.getElementById('tooltipHoverEffectOver')
+let navTooltip03 = document.getElementById('tooltipHoverEffectPost')
+let navTooltip04 = document.getElementById('tooltipHoverEffectSched')
+let navTooltip05 = document.getElementById('tooltipHoverEffectIncome')
+let navTooltip06 = document.getElementById('tooltipHoverEffectPromote')
+let navTooltip07 = document.getElementById('tooltipHoverEffectDoc')
+let navTooltip08 = document.getElementById('tooltipHoverEffectRep')
 
 
 
@@ -247,7 +247,7 @@ function light() {
   navTooltip08.style.setProperty('--beforeBack', '#fff')
 
   dropUl.style.backgroundColor = '#fff'
-  dropUl.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  dropUl.style.boxShadow = ''
   dropUl.style.setProperty('--beforeBack', '#fff')
 }
 function dark() {
@@ -380,7 +380,7 @@ function dark() {
 
 
   profileNav.style.backgroundColor = '#18191A'
-  profileNav.style.boxShadow = '0 3px 10px 3px rgba(45, 45, 45, 0.7)'
+  profileNav.style.boxShadow = '0 1px 10px 1px rgba(45, 45, 45, 0.7)'
   vProfile.style.color = '#fff'
   lOut.style.color = '#fff'
 
@@ -406,37 +406,45 @@ function dark() {
   })
 
   lightTheme.style.left = '0'
-  darkTheme.style.left = '-40px'
+  darkTheme.style.left = '-45px'
 
   navTooltip01.style.backgroundColor = '#18191A'
+  navTooltip01.style.color = '#fff'
   navTooltip01.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
   navTooltip01.style.setProperty('--beforeBack', '#18191A')
 
   navTooltip02.style.backgroundColor = '#18191A'
+  navTooltip02.style.color = '#fff'
   navTooltip02.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
   navTooltip02.style.setProperty('--beforeBack', '#18191A')
 
   navTooltip03.style.backgroundColor = '#18191A'
+  navTooltip03.style.color = '#fff'
   navTooltip03.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
   navTooltip03.style.setProperty('--beforeBack', '#18191A')
 
   navTooltip04.style.backgroundColor = '#18191A'
+  navTooltip04.style.color = '#fff'
   navTooltip04.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
   navTooltip04.style.setProperty('--beforeBack', '#18191A')
 
   navTooltip05.style.backgroundColor = '#18191A'
+  navTooltip05.style.color = '#fff'
   navTooltip05.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
   navTooltip05.style.setProperty('--beforeBack', '#18191A')
 
   navTooltip06.style.backgroundColor = '#18191A'
+  navTooltip06.style.color = '#fff'
   navTooltip06.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
   navTooltip06.style.setProperty('--beforeBack', '#18191A')
 
   navTooltip07.style.backgroundColor = '#18191A'
+  navTooltip07.style.color = '#fff'
   navTooltip07.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
   navTooltip07.style.setProperty('--beforeBack', '#18191A')
 
   navTooltip08.style.backgroundColor = '#18191A'
+  navTooltip08.style.color = '#fff'
   navTooltip08.style.boxShadow = '0 3px 10px 3px rgba(45, 45, 45, 0.7)'
   navTooltip08.style.setProperty('--beforeBack', '#18191A')
 
