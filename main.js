@@ -196,6 +196,9 @@ function light() {
   hoverPnavMenu03.addEventListener('mouseleave', () => {
     hoverPnavMenu03.style.background = 'none'
   })
+
+  lightTheme.style.left = '40px'
+  darkTheme.style.left = '0'
 }
 function dark() {
   header.style.backgroundColor = '#18191A'
@@ -351,4 +354,7 @@ function dark() {
   hoverPnavMenu03.addEventListener('mouseleave', () => {
     hoverPnavMenu03.style.background = 'none'
   })
+
+  lightTheme.style.left = '0'
+  darkTheme.style.left = '-40px'
 }
