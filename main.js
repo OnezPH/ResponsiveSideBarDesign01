@@ -18,6 +18,7 @@ let sideBarHover05 = document.getElementById('sideBarEnterMouse05')
 let sideBarHover06 = document.getElementById('sideBarEnterMouse06')
 let sideBarHover07 = document.getElementById('sideBarEnterMouse07')
 
+let dropUl = document.getElementById('dronUlCon')
 let dropMenuHover01 = document.getElementById('dropMenu01')
 let dropMenuHover02 = document.getElementById('dropMenu02')
 let dropMenuHover03 = document.getElementById('dropMenu03')
@@ -35,6 +36,19 @@ let lOut = document.getElementById('logOut')
 let hoverPnavMenu01 = document.getElementById('hoverProgfileMenu01')
 let hoverPnavMenu02 = document.getElementById('hoverProgfileMenu02')
 let hoverPnavMenu03 = document.getElementById('hoverProgfileMenu03')
+
+
+let navTooltip01 = document.getElementById('tooltip01')
+let navTooltip02 = document.getElementById('tooltip02')
+let navTooltip03 = document.getElementById('tooltip03')
+let navTooltip04 = document.getElementById('tooltip04')
+let navTooltip05 = document.getElementById('tooltip05')
+let navTooltip06 = document.getElementById('tooltip06')
+let navTooltip07 = document.getElementById('tooltip07')
+let navTooltip08 = document.getElementById('tooltip08')
+
+
+
 
 
 function light() {
@@ -199,6 +213,42 @@ function light() {
 
   lightTheme.style.left = '40px'
   darkTheme.style.left = '0'
+
+  navTooltip01.style.backgroundColor = '#fff'
+  navTooltip01.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  navTooltip01.style.setProperty('--beforeBack', '#fff')
+
+  navTooltip02.style.backgroundColor = '#fff'
+  navTooltip02.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  navTooltip02.style.setProperty('--beforeBack', '#fff')
+
+  navTooltip03.style.backgroundColor = '#fff'
+  navTooltip03.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  navTooltip03.style.setProperty('--beforeBack', '#fff')
+
+  navTooltip04.style.backgroundColor = '#fff'
+  navTooltip04.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  navTooltip04.style.setProperty('--beforeBack', '#fff')
+
+  navTooltip05.style.backgroundColor = '#fff'
+  navTooltip05.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  navTooltip05.style.setProperty('--beforeBack', '#fff')
+
+  navTooltip06.style.backgroundColor = '#fff'
+  navTooltip06.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  navTooltip06.style.setProperty('--beforeBack', '#fff')
+
+  navTooltip07.style.backgroundColor = '#fff'
+  navTooltip07.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  navTooltip07.style.setProperty('--beforeBack', '#fff')
+
+  navTooltip08.style.backgroundColor = '#fff'
+  navTooltip08.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  navTooltip08.style.setProperty('--beforeBack', '#fff')
+
+  dropUl.style.backgroundColor = '#fff'
+  dropUl.style.boxShadow = '0 3px 10px 3px rgba(209, 209, 209, 0.7)'
+  dropUl.style.setProperty('--beforeBack', '#fff')
 }
 function dark() {
   header.style.backgroundColor = '#18191A'
@@ -357,4 +407,40 @@ function dark() {
 
   lightTheme.style.left = '0'
   darkTheme.style.left = '-40px'
+
+  navTooltip01.style.backgroundColor = '#18191A'
+  navTooltip01.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
+  navTooltip01.style.setProperty('--beforeBack', '#18191A')
+
+  navTooltip02.style.backgroundColor = '#18191A'
+  navTooltip02.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
+  navTooltip02.style.setProperty('--beforeBack', '#18191A')
+
+  navTooltip03.style.backgroundColor = '#18191A'
+  navTooltip03.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
+  navTooltip03.style.setProperty('--beforeBack', '#18191A')
+
+  navTooltip04.style.backgroundColor = '#18191A'
+  navTooltip04.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
+  navTooltip04.style.setProperty('--beforeBack', '#18191A')
+
+  navTooltip05.style.backgroundColor = '#18191A'
+  navTooltip05.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
+  navTooltip05.style.setProperty('--beforeBack', '#18191A')
+
+  navTooltip06.style.backgroundColor = '#18191A'
+  navTooltip06.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
+  navTooltip06.style.setProperty('--beforeBack', '#18191A')
+
+  navTooltip07.style.backgroundColor = '#18191A'
+  navTooltip07.style.boxShadow = '0 1px 10px 2px rgba(45, 45, 45, 0.7)'
+  navTooltip07.style.setProperty('--beforeBack', '#18191A')
+
+  navTooltip08.style.backgroundColor = '#18191A'
+  navTooltip08.style.boxShadow = '0 3px 10px 3px rgba(45, 45, 45, 0.7)'
+  navTooltip08.style.setProperty('--beforeBack', '#18191A')
+
+  dropUl.style.backgroundColor = '#18191A'
+  dropUl.style.boxShadow = '0 3px 10px 3px rgba(45, 45, 45, 0.7)'
+  dropUl.style.setProperty('--beforeBack', '#18191A')
 }

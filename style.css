@@ -407,7 +407,7 @@ nav > li .active{
     margin-top: 5px;
     margin-left: -17px;
     transform: rotate(45deg);
-    background-color: #fff;
+    background-color: var(--beforeBack, #fff);
     position: absolute;
   }
   .reports i:hover ~ .hoverreports,
@@ -432,16 +432,18 @@ nav > li .active{
     border: none;
     padding: 10px;
     box-shadow: 0 3px 10px 3px rgba(209, 209, 209, 0.7);
+    transition: .3s ease-in-out;
   }
   #dronUlCon::before{
     content: '';
     width: 20px;
     height: 20px;
-    background-color: #fff;
+    background-color: var(--beforeBack, #fff);
     border-radius: 2px;
     transform: rotate(45deg);
     margin: -18px 0 0 10px;
     position: absolute;
+    transition: .3s ease-in-out;
   }
   .theme{display: none;}
   .themeModeWrap{
