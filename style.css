@@ -458,7 +458,7 @@ nav > li .active{
     transform: rotate(45deg);
     margin: 5px 0 0 -18px;
     position: absolute;
-    transition: .3s linear;
+    transition: .3s ease-in-out;
   }
   .theme{display: none;}
   .themeModeWrap{
