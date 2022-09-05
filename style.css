@@ -447,7 +447,7 @@ nav > li .active{
     border: none;
     padding: 10px;
     box-shadow: 0 1px 10px 1px rgba(209, 209, 209, 0.7);
-    transition: .3s linear;
+    transition: .3s ease-in-out;
   }
   #dronUlCon::before{
     content: '';
